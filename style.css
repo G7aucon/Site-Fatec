@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+
+:root {
+    --bg-color: white;
+    --segunda-bg-color: #323946;
+    --text-color: #395360;
+    --main-color: #AE0000;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color)
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: bold
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+    color: #AE0000
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: #AE0000;
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.fatec img {
+    width: 45vw;
+}
+
+.home-content h3 {
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: var(--main-color)
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 0.8;
+    color: #AE0000;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 2rem 1.5rem 3rem 0;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: none;
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0.9rem var(--main-color);
+}
+
+.faculdade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-color);
+    font-size: 1.6rem;
+}
+
+.faculdade img {
+    width: 40vw;
+}
+
+.leia {
+    text-align: left;
+    font-size: 4.5rem;
+    margin: -1rem 0 -1rem;
+}
+
+.sobre-faculdade h3 {
+    font-size: 2.6rem;
+}
+
+.sobre-faculdade p {
+    text-align: justify;
+    font-size: 1.6rem;
+    margin: 1rem 0 1rem;
+}
+
+.cursos h2 {
+    margin-bottom: 5rem;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.cursos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.cursos-container .caixa-cursos {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--segunda-bg-color);
+    transition: .3s ease;
+}
+
+.cursos-container .caixa-cursos:hover {
+    border-color: var(--main-color);
+    transform: scale(1.04);
+}
+
+.caixa-cursos i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.caixa-cursos h3 {
+    font-size: 1.6rem;
+}
+
+.caixa-cursos p {
+    font-size: 1.4rem;
+    margin: 1rem 0 3rem;
+    text-align: justify;
+}
+
+.projetos {
+    background: var(--bg-color);
+}
+
+.projetos h2 {
+    margin-bottom: 4rem;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.projetos-container {
+    display: flex;
+    grid-template-columns: repeat(4, 4fr);
+    align-items: center;
+    gap: 2.0rem;
+}
+
+.projetos img {
+    width: 20vw;
+}
+
+.projetos-container .caixa-projetos {
+    position: relative;
+    border-radius: 3rem;
+    box-shadow: 0 0 02rem var(--main-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.caixa-projetos img {
+    width: 180%;
+}
+
+.caixa-projetos .projeto-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+    color: white;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.caixa-projetos:hover .projeto-layer {
+    transform: translateY(0);
+}
+
+.projeto-layer h4 {
+    font-size: 2rem;
+}
+
+.projeto-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    text-align: justify;
+}
+
+.projeto-layer a {
+    display: inline-flex;
+    height: 5rem;
+    width: 5rem;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    border-radius: 50%;
+}
+
+.projeto-layer a i {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.fale_conosco h2 {
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.fale_conosco form {
+    max-width: 90rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+.fale_conosco form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fale_conosco form .input-box input,
+.fale_conosco form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: white;
+    background: var(--segunda-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.fale_conosco form .input-box input {
+    width: 49%;
+}
+
+.fale_conosco form textarea {
+    resize: none;
+}
+
+.fale_conosco form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.rodapé {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--segunda-bg-color);
+    color: white;
+
+}
+
+.texto_rodapé p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.footer-icontop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--bg-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-icontop a:hover {
+    box-shadow: 0 0 5rem var(--main-color);
+}
+
+.footer-icontop a i {
+    font-size: 2.4rem;
+    color: var(--main-color);
+}
